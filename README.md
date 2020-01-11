@@ -9,7 +9,7 @@ Kindling the Darkness: a Practical Low-light Image Enhancer. In ACMMM2019<br>
 Yonghua Zhang, Jiawan Zhang, Xiaojie Guo
 
 ### The network architecture of KinD++: ###
-<img src="figures/network.jpg" width="1000px"/>
+<img src="figures/network4.jpg" width="1000px"/>
 
 ### The reflectance restoration network and the MSIA module: ###
 <img src="figures/restoration_net2.jpg" width="1000px"/> 
