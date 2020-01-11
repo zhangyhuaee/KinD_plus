@@ -27,7 +27,7 @@ Please put test images into 'test_images' folder and download the pre-trained ch
 ```shell
 python evaluate.py
 ```
-The test datasets (e.g. DICM, LIME, MEF and NPE) can be download from [google drive](https://drive.google.com/open?id=12sUp8aOlNIB5h11lwsjs1Qm9sdH7v5p1).
+The test datasets (e.g. DICM, LIME, MEF and NPE) can be downloaded from [google drive](https://drive.google.com/open?id=12sUp8aOlNIB5h11lwsjs1Qm9sdH7v5p1).
 
 ### Train ###
 The original LOLdataset can be downloaded from [here](https://daooshee.github.io/BMVC2018website/). We rearrange the original LOLdataset and add several pairs all-zero images and 260 pairs synthetic images to improve the decomposition results and restoration results. The training dataset can be download from [google drive](https://drive.google.com/open?id=1YztDWbK3MV5EroSpuWmYlPsmFcFGoLmq). For training, just run
