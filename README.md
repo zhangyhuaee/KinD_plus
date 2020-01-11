@@ -44,6 +44,12 @@ python evaluate_LOLdataset.py
 ### More information ###
 We will provide more codes link of the existing low-light image enhancement methods in the few days. So stay tuned! 
 
+
+
+### NIQE code ###
+Non-reference metric NIQE are adopted for quantitative comparison. The original code for computing NIQE is [here](https://github.com/csjunxu/Bovik_NIQE_SPL2013). To improve the robustness, we follow the author's code and retrain the model parameters by extending 100 high-resolution natural images from [PIRM dataset](https://pirm.github.io/).  Put the [original 125 images](http://live.ece.utexas.edu/research/quality/pristinedata.zip) and additional 100 images (dir: PIRM_dataset\Validation\Original) into one folder 'data', then run
+[mu_prisparam cov_prisparam]  = estimatemodelparam('data',96,96,0,0,0.75);
+After retrained, the file 'modelparameters_new.mat' will be generated.
 ### References ###
 [1] Y. Zhang, J. Zhang, and X. Guo, “Kindling the darkness: A practical low-light image enhancer,” in ACM MM, 2019, pp. 1632–1640.
 
