@@ -5,7 +5,7 @@ We propose a novel multi-scale illumination attention module (MSIA), which can a
 
 The KinD net was proposed in the following [Paper](http://doi.acm.org/10.1145/3343031.3350926).
 
-Kindling the Darkness: a Practical Low-light Image Enhancer. In ACMMM2019<br>
+Kindling the Darkness: a Practical Low-light Image Enhancer. In ACM MM 2019<br>
 Yonghua Zhang, Jiawan Zhang, Xiaojie Guo
 
 ### The network architecture of KinD++: ###
