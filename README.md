@@ -39,6 +39,10 @@ You can also evaluate on the LOLdataset, just run
 ```shell
 python evaluate_LOLdataset.py
 ```
+
+### More information ###
+We will provide more codes link of the existing low-light image enhancement methods in the few days. So stay tuned! 
+
 ### References ###
 [1] Y. Zhang, J. Zhang, and X. Guo, “Kindling the darkness: A practical low-light image enhancer,” in ACM MM, 2019, pp. 1632–1640.
 
