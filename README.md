@@ -32,7 +32,7 @@ python evaluate.py
 The original LOLdataset can be downloaded from [here](https://daooshee.github.io/BMVC2018website/). We rearrange the original LOLdataset and add several all-zero images and 260 pairs synthetic images to improve the decomposition results and restoration results. The new dataset can be download from [google drive](https://drive.google.com/open?id=1YztDWbK3MV5EroSpuWmYlPsmFcFGoLmq). For training, just run
 ```shell
 python decomposition_net_train.py
-python adjustment_net_train.py
+python illumination_adjustment_net_train.py
 python reflectance_restoration_net_train.py
 ```
 You can also evaluate on the LOLdataset, just run
