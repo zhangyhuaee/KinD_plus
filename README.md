@@ -11,7 +11,8 @@ Yonghua Zhang, Jiawan Zhang, Xiaojie Guo
 
 ## The network architecture of KinD++: ##
 <img src="figures/network4.jpg" width="1000px"/>
-****  
+
+----
 
 ## The reflectance restoration network and the MSIA module: ##
 <img src="figures/restoration_net2.jpg" width="1000px"/> 
