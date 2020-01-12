@@ -17,19 +17,19 @@ Yonghua Zhang, Jiawan Zhang, Xiaojie Guo
 ## Visual comparison with state-of-the-art low-light image enhancement methods. ##
 <img src="figures/compare_images.jpg" width="1000px"/>
 
-### Requirements ###
+## Requirements ##
 1. Python
 2. Tensorflow >= 1.10.0
 3. numpy, PIL
 
-### Test ###
+## Test ##
 Please put test images into 'test_images' folder and download the pre-trained checkpoints from [google drive](https://drive.google.com/open?id=1RuW6fgkDEQ6v9GMlcWgtWiGglew6jplO) or [BaiduNetDisk](https://pan.baidu.com/s/1DY49dJSlue1PNWy05nZb5A), then just run
 ```shell
 python evaluate.py
 ```
 The test datasets (e.g. DICM, LIME, MEF and NPE) can be downloaded from [google drive](https://drive.google.com/open?id=12sUp8aOlNIB5h11lwsjs1Qm9sdH7v5p1). Our enhancement results of these datasets can be downloaded from [google drive](https://drive.google.com/open?id=1dBLdVV_-DEPyGOT5W8aLOetBqtEaMcl6). 
 
-### Train ###
+## Train ##
 The original LOLdataset can be downloaded from [here](https://daooshee.github.io/BMVC2018website/). We rearrange the original LOLdataset and add several pairs all-zero images and 260 pairs synthetic images to improve the decomposition results and restoration results. The training dataset can be download from [google drive](https://drive.google.com/open?id=1YztDWbK3MV5EroSpuWmYlPsmFcFGoLmq). For training, just run
 ```shell
 python decomposition_net_train.py
@@ -60,14 +60,14 @@ The __codes__ of above-mentioned methods can be found from [here](https://github
 13. KinD [1] ([code](https://github.com/zhangyhuaee/KinD))
 
 
-### NIQE code ###
+## NIQE code ##
 Non-reference metric NIQE is adopted for quantitative comparison. The original code for computing NIQE is [here](https://github.com/csjunxu/Bovik_NIQE_SPL2013). To improve the robustness, we follow the author's code and retrain the model parameters by extending 100 high-resolution natural images from [PIRM dataset](https://pirm.github.io/).  Put the [original 125 images](http://live.ece.utexas.edu/research/quality/pristinedata.zip) and additional 100 images (dir: PIRM_dataset\Validation\Original) into one folder 'data', then run
 ```shell
 [mu_prisparam cov_prisparam]  = estimatemodelparam('data',96,96,0,0,0.75);
 ```
 After retrained, the file 'modelparameters_new.mat' will be generated. We use this model to evaluate all results.
 
-### References ###
+## References ##
 [1] Y. Zhang, J. Zhang, and X. Guo, “Kindling the darkness: A practical low-light image enhancer,” in ACM MM, 2019, pp. 1632–1640. 
 
 [2] X. Guo, Y. Li, and H. Ling, “Lime: Low-light image enhancement via illumination map estimation,” IEEE TIP, vol. 26, no. 2, pp. 982–993, 2017.
