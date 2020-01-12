@@ -23,7 +23,7 @@ Yonghua Zhang, Jiawan Zhang, Xiaojie Guo
 3. numpy, PIL
 
 ### Test ###
-Please put test images into 'test_images' folder and download the pre-trained checkpoints from [google drive](https://drive.google.com/open?id=1RuW6fgkDEQ6v9GMlcWgtWiGglew6jplO), then just run
+Please put test images into 'test_images' folder and download the pre-trained checkpoints from [google drive](https://drive.google.com/open?id=1RuW6fgkDEQ6v9GMlcWgtWiGglew6jplO) or [BaiduNetDisk](https://pan.baidu.com/s/1DY49dJSlue1PNWy05nZb5A), then just run
 ```shell
 python evaluate.py
 ```
