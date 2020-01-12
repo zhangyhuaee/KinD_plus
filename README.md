@@ -8,13 +8,13 @@ The KinD net was proposed in the following [Paper](http://doi.acm.org/10.1145/33
 Kindling the Darkness: a Practical Low-light Image Enhancer. In ACM MM 2019<br>
 Yonghua Zhang, Jiawan Zhang, Xiaojie Guo
 
-### The network architecture of KinD++: ###
+## The network architecture of KinD++: ##
 <img src="figures/network4.jpg" width="1000px"/>
 
-### The reflectance restoration network and the MSIA module: ###
+## The reflectance restoration network and the MSIA module: ##
 <img src="figures/restoration_net2.jpg" width="1000px"/> 
 
-### Visual comparison with state-of-the-art low-light image enhancement methods. ###
+## Visual comparison with state-of-the-art low-light image enhancement methods. ##
 <img src="figures/compare_images.jpg" width="1000px"/>
 
 ### Requirements ###
