@@ -41,9 +41,23 @@ You can also evaluate on the LOLdataset, just run
 python evaluate_LOLdataset.py
 ```
 
-### More information ###
-We will provide more codes link of the existing low-light image enhancement methods in the few days. So stay tuned! 
-
+## A survey of low-light image enhancement methods ##
+### Traditional methods: ###
+1. Single-scale Retinex (SSR) [5]
+2. Multi-scale Retinex (MSR) [6]
+3. Naturalness preserved enhancement (NPE) [7]
+4. Fusion-based enhancing method (MEF) [8]
+5. LIME [2]
+6. SRIE [9]
+7. Dong [10]
+8. BIMEF [11]
+The codes of above-mentioned methods can be found from [here](https://github.com/baidut/BIMEF/tree/master/lowlight).
+9. CRM [12] ([code]())
+### Deep learning methods: ###
+10. RetinexNet [3] ([code](https://github.com/weichen582/RetinexNet))
+11. GLAD [13] ([code](https://github.com/weichen582/GLADNet))
+12. DUPE [4] ([code](https://github.com/wangruixing/DeepUPE))
+13. KinD [1] ([code](https://github.com/zhangyhuaee/KinD))
 
 
 ### NIQE code ###
@@ -62,4 +76,27 @@ After retrained, the file 'modelparameters_new.mat' will be generated. We use th
 
 [4] R. Wang, Q. Zhang, C.-W. Fu, X. Shen, W.-S. Zheng, and J. Jia, “Underexposed photo enhancement using deep illumination estimation,” in CVPR, 2019, pp. 6849–6857.
 
+[5] D. J. Jobson, Z. Rahman, and G. A. Woodell, “Properties and performance of a center/surround retinex,” IEEE TIP, vol. 6, no. 3,
+pp. 451–462, 1997.
+
+[6] D. J. Jobson, Z. Rahman, and G. A. Woodell, “A multiscale retinex for bridging the gap between color images and the human observation of scenes,” IEEE TIP, vol. 6, no. 7, pp. 965–976, 2002.
+
+[7] S. Wang, J. Zheng, H. Hu, and B. Li, “Naturalness preserved enhancement algorithm for non-uniform illumination images,”
+IEEE TIP, vol. 22, no. 9, pp. 3538–3548, 2013.
+
+[8] X. Fu, D. Zeng, H. Yue, Y. Liao, X. Ding, and J. Paisley, “A fusion-based enhancing method for weakly illuminated images,” Signal
+Processing, vol. 129, pp. 82–96, 2016.
+
+[9] X. Fu, D. Zeng, Y. Huang, X. Zhang, and X. Ding, “A weighted variational model for simultaneous reﬂectance and illumination
+estimation,” in CVPR, 2016, pp. 2782–2790.
+
+[10] X. Dong, Y. Pang, and J. Wen, “Fast efﬁcient algorithm for enhancement of low lighting video,” in ICME, 2011, pp. 1–6.
+
+[11] Z. Ying, L. Ge, and W. Gao, “A bio-inspired multi-exposure fusion framework for low-light image enhancement,” arXiv: 1711.00591,
+2017.
+
+[12] Z. Ying, L. Ge, Y. Ren, R. Wang, and W. Wang, “A new low-light image enhancement algorithm using camera response model,” in
+ICCVW, 2018, pp. 3015–3022.
+
+[13] W. Wang, W. Chen, W. Yang, and J. Liu, “Gladnet: Low-light enhancement network with global awareness,” in FG, 2018.
 
