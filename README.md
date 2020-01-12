@@ -50,7 +50,7 @@ python evaluate_LOLdataset.py
 5. LIME [2]
 6. SRIE [9]
 7. Dong [10]
-8. BIMEF [11]
+8. BIMEF [11]  
 The codes of above-mentioned methods can be found from [here](https://github.com/baidut/BIMEF/tree/master/lowlight).
 9. CRM [12] ([code](https://github.com/zhangyhuaee/KinD_plus/tree/master/CRM))
 ### Deep learning methods: ###
@@ -68,12 +68,10 @@ Non-reference metric NIQE is adopted for quantitative comparison. The original c
 After retrained, the file 'modelparameters_new.mat' will be generated. We use this model to evaluate all results.
 
 ### References ###
-[1] Y. Zhang, J. Zhang, and X. Guo, “Kindling the darkness: A practical low-light image enhancer,” in ACM MM, 2019, pp. 1632–1640.
-
+[1] Y. Zhang, J. Zhang, and X. Guo, “Kindling the darkness: A practical low-light image enhancer,” in ACM MM, 2019, pp. 1632–1640.  
 [2] X. Guo, Y. Li, and H. Ling, “Lime: Low-light image enhancement via illumination map estimation,” IEEE TIP, vol. 26, no. 2, pp. 982–993, 2017.
 
-[3] C. Wei, W. Wang, W. Yang, and J. Liu, “Deep retinex decomposition for low-light enhancement,” in BMVC, 2018.
-
+[3] C. Wei, W. Wang, W. Yang, and J. Liu, “Deep retinex decomposition for low-light enhancement,” in BMVC, 2018.  
 [4] R. Wang, Q. Zhang, C.-W. Fu, X. Shen, W.-S. Zheng, and J. Jia, “Underexposed photo enhancement using deep illumination estimation,” in CVPR, 2019, pp. 6849–6857.
 
 [5] D. J. Jobson, Z. Rahman, and G. A. Woodell, “Properties and performance of a center/surround retinex,” IEEE TIP, vol. 6, no. 3,
