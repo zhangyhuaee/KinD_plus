@@ -19,7 +19,7 @@ Yonghua Zhang, Jiawan Zhang, Xiaojie Guo
 
 ----
 
-## Visual comparison with state-of-the-art low-light image enhancement methods. ##
+### Visual comparison with state-of-the-art low-light image enhancement methods. ###
 <img src="figures/compare_images.jpg" width="1000px"/>
 
 ----
