@@ -55,8 +55,8 @@ The codes of above-mentioned methods can be found from [here](https://github.com
 9. CRM [12] ([code]())
 ### Deep learning methods: ###
 10. RetinexNet [3] ([code](https://github.com/weichen582/RetinexNet))
-11. GLAD [13] ([code](https://github.com/weichen582/GLADNet))
-12. DUPE [4] ([code](https://github.com/wangruixing/DeepUPE))
+11. GLADNet [13] ([code](https://github.com/weichen582/GLADNet))
+12. DeepUPE [4] ([code](https://github.com/wangruixing/DeepUPE))
 13. KinD [1] ([code](https://github.com/zhangyhuaee/KinD))
 
 
