@@ -93,7 +93,7 @@ for idx in range(len(eval_low_data_name_bmp)):
     eval_low_data_bmp.append(eval_low_im)
     print(eval_low_im.shape)
 
-eval_high_data_name =  glob('./LOLdataset/our485/high/*.png')+ glob('./LOLdataset//add_sys/sys_high/*.png')+ glob('./LOLdataset/dark/high/*.png')
+eval_high_data_name =  glob('./LOLdataset/our485/high/*.png')+ glob('./LOLdataset/add_sys/sys_high/*.png')+ glob('./LOLdataset/dark/high/*.png')
 eval_high_data_name.sort()
 for idx in range(len(eval_high_data_name)):
     eval_high_im = load_images(eval_high_data_name[idx])
