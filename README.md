@@ -1,5 +1,5 @@
 # KinD++
-This is a Tensorflow implementation of KinD++. (For the paper: Beyond Brightening Low-light Images)
+This is a Tensorflow implementation of KinD++. (For the [paper](https://link.springer.com/article/10.1007/s11263-020-01407-x): Beyond Brightening Low-light Images)
 
 Zhang, Y., Guo, X., Ma, J. et al. Beyond Brightening Low-light Images. IJCV, (2021).
 
