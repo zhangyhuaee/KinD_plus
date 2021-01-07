@@ -1,5 +1,7 @@
 # KinD++
-This is a Tensorflow implementation of KinD++. (Beyond Brightening Low-light Images)
+This is a Tensorflow implementation of KinD++. (For the paper: Beyond Brightening Low-light Images)
+
+Zhang, Y., Guo, X., Ma, J. et al. Beyond Brightening Low-light Images. IJCV, (2021).
 
 We propose a novel multi-scale illumination attention module (MSIA), which can alleviate visual defects (e.g. non-uniform spots and over-smoothing) left in [KinD](https://github.com/zhangyhuaee/KinD). 
 
