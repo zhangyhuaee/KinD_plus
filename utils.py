@@ -1,6 +1,8 @@
 import numpy as np
 from PIL import Image
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import scipy.stats as st
 from skimage import io,data,color
 from functools import reduce
@@ -60,7 +62,7 @@ def gradient_no_abs(input_tensor, direction):
     gradient_orig = tf.nn.conv2d(input_tensor, kernel, strides=[1, 1, 1, 1], padding='SAME')
     grad_min = tf.reduce_min(gradient_orig)
     grad_max = tf.reduce_max(gradient_orig)
-    grad_norm = tf.div((gradient_orig - grad_min), (grad_max - grad_min + 0.0001))
+    grad_norm = tf.divide((gradient_orig - grad_min), (grad_max - grad_min + 0.0001))
     return grad_norm
 
 def gradient(input_tensor, direction):
@@ -73,7 +75,7 @@ def gradient(input_tensor, direction):
     gradient_orig = tf.abs(tf.nn.conv2d(input_tensor, kernel, strides=[1, 1, 1, 1], padding='SAME'))
     grad_min = tf.reduce_min(gradient_orig)
     grad_max = tf.reduce_max(gradient_orig)
-    grad_norm = tf.div((gradient_orig - grad_min), (grad_max - grad_min + 0.0001))
+    grad_norm = tf.divide((gradient_orig - grad_min), (grad_max - grad_min + 0.0001))
     return grad_norm
 
 

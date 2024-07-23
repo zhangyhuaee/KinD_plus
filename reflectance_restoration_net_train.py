@@ -6,7 +6,9 @@ import time
 import random
 from skimage import color
 from PIL import Image
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import numpy as np
 
 from utils import *
@@ -100,7 +102,7 @@ for idx in range(len(eval_high_data_name)):
     eval_high_data.append(eval_high_im)
     print(eval_high_im.shape)
 
-pre_checkpoint_dir = './checkpoint/decom_model/'
+pre_checkpoint_dir = './checkpoint/decom_net_retrain/'
 ckpt_pre=tf.train.get_checkpoint_state(pre_checkpoint_dir)
 if ckpt_pre:
     print('loaded '+ckpt_pre.model_checkpoint_path)
@@ -173,7 +175,7 @@ def lr_schedule(epoch):
 
 epoch = 2400
 
-sample_dir = './new_restoration_train_results_3/'
+sample_dir = './new_restoration_train_results/'
 if not os.path.isdir(sample_dir):
     os.makedirs(sample_dir)
 eval_every_epoch = 150
@@ -183,7 +185,7 @@ train_op = train_op_restoration
 train_loss = loss_restoration
 saver = saver_restoration
 
-checkpoint_dir = './checkpoint/new_restoration_retrain_3/'
+checkpoint_dir = './checkpoint/new_restoration_retrain/'
 if not os.path.isdir(checkpoint_dir):
     os.makedirs(checkpoint_dir)
 ckpt=tf.train.get_checkpoint_state(checkpoint_dir)

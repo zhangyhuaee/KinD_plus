@@ -1,7 +1,9 @@
 # coding: utf-8
 from __future__ import print_function
 import os, time, random
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 from PIL import Image
 import numpy as np
 from utils import *
@@ -53,10 +55,10 @@ def mutual_i_input_loss(input_I_low, input_im):
     input_gray = tf.image.rgb_to_grayscale(input_im)
     low_gradient_x = gradient(input_I_low, "x")
     input_gradient_x = gradient(input_gray, "x")
-    x_loss = tf.abs(tf.div(low_gradient_x, tf.maximum(input_gradient_x, 0.01)))
+    x_loss = tf.abs(tf.divide(low_gradient_x, tf.maximum(input_gradient_x, 0.01)))
     low_gradient_y = gradient(input_I_low, "y")
     input_gradient_y = gradient(input_gray, "y")
-    y_loss = tf.abs(tf.div(low_gradient_y, tf.maximum(input_gradient_y, 0.01)))
+    y_loss = tf.abs(tf.divide(low_gradient_y, tf.maximum(input_gradient_y, 0.01)))
     mut_loss = tf.reduce_mean(x_loss + y_loss) 
     return mut_loss
 

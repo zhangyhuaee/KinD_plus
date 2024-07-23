@@ -5,7 +5,9 @@ import time
 import random
 #from skimage import color
 from PIL import Image
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import numpy as np
 from utils import *
 from model import *
@@ -73,7 +75,7 @@ for idx in range(len(train_low_data_names)):
     high_im = load_images(train_high_data_names[idx])
     train_high_data.append(high_im)
 
-pre_decom_checkpoint_dir = './checkpoint/decom_model/'
+pre_decom_checkpoint_dir = './checkpoint/decom_net_retrain/'
 ckpt_pre=tf.train.get_checkpoint_state(pre_decom_checkpoint_dir)
 if ckpt_pre:
     print('loaded '+ckpt_pre.model_checkpoint_path)
@@ -88,7 +90,7 @@ for idx in range(len(train_low_data)):
     RR, II = sess.run([decom_output_R, decom_output_I], feed_dict={input_decom: input_low})
     RR0 = np.squeeze(RR)
     II0 = np.squeeze(II)
-    print(RR0.shape, II0.shape)
+    #print(RR0.shape, II0.shape)
     #decomposed_high_r_data_480.append(result_1_sq)
     decomposed_low_i_data_480.append(II0)
 for idx in range(len(train_high_data)):
@@ -96,7 +98,7 @@ for idx in range(len(train_high_data)):
     RR2, II2 = sess.run([decom_output_R, decom_output_I], feed_dict={input_decom: input_high})
     RR02 = np.squeeze(RR2)
     II02 = np.squeeze(II2)
-    print(RR02.shape, II02.shape)
+    #print(RR02.shape, II02.shape)
     #decomposed_high_r_data_480.append(result_1_sq)
     decomposed_high_i_data_480.append(II02)
 
@@ -193,7 +195,7 @@ for epoch in range(start_epoch, epoch):
                                                               input_high_i: input_high_i_rand, \
                                                               lr: learning_rate})
         print("%s Epoch: [%2d] [%4d/%4d] time: %4.4f, loss: %.6f" \
-              % (train_phase, epoch + 1, batch_id + 1, numBatch, time.time() - start_time, loss))
+             % (train_phase, epoch + 1, batch_id + 1, numBatch, time.time() - start_time, loss))
         iter_num += 1
     if (epoch + 1) % eval_every_epoch == 0:
         print("[*] Evaluating for phase %s / epoch %d..." % (train_phase, epoch + 1))
